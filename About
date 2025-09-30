@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Harshvardhan Singh | HVS ECE & Electronic</title>
+    <meta name="description" content="Learn more about Harshvardhan Singh (HVS ECE), an Electronics and Communication Engineering (ECE) student with a passion for embedded systems, IoT, and automation. See the background of an HVS Electronic specialist.">
+    <meta name="keywords" content="About Harshvardhan Singh, HVS Tech, HVS ECE, HVS Electronic, Electronics Engineer, ECE, Embedded Systems, IoT, Skills">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a1a; color: #cbd5e1; }
+        .font-orbitron { font-family: 'Orbitron', sans-serif; }
+        .cyber-glow { box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); border: 1px solid rgba(0, 255, 255, 0.3); }
+        .tech-tag { @apply inline-block bg-cyan-900/50 text-cyan-300 text-sm font-medium px-4 py-2 rounded-md border border-cyan-700; }
+        h1, h2 { text-shadow: 0 0 8px rgba(0,255,255,0.4); }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-orbitron font-bold tracking-tight text-white" style="text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);">HVS</a>
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="about.html" class="text-cyan-400 font-bold">About</a>
+                    <a href="experience.html" class="text-slate-300 hover:text-cyan-400">Experience</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-cyan-400">Projects</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-cyan-400">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-300 hover:text-white focus:outline-none"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg></button>
+                </div>
+            </div>
+        </div>
+         <div id="mobile-menu" class="hidden md:hidden bg-black/80">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-cyan-400 bg-slate-800">About</a>
+                <a href="experience.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Experience</a>
+                <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-orbitron font-bold text-white mb-8">About Me</h1>
+
+            <div class="bg-slate-900 p-8 rounded-lg cyber-glow">
+                <p class="text-lg text-slate-300 leading-relaxed">
+                    I am a passionate and driven Electronics and Communication Engineering student at Ramaiah Institute of Technology, with a deep-seated interest in the world of embedded systems, robotics, and the Internet of Things (IoT). My journey is fueled by a curiosity to understand how things work and a desire to build solutions that solve real-world problems.
+                </p>
+                <p class="mt-4 text-slate-400 leading-relaxed">
+                    From designing custom PCBs with KiCad to developing automation scripts with Python and MAVLink, I thrive on the entire product development lifecycle. I enjoy the challenge of integrating hardware and software to create efficient, intelligent systems. My hands-on experience with platforms like Raspberry Pi, Arduino, and Pixhawk has provided me with a solid foundation to tackle complex engineering challenges.
+                </p>
+
+                <h2 class="font-orbitron text-3xl font-bold text-white mt-12 mb-6">Core Skills</h2>
+                <div class="flex flex-wrap gap-4">
+                    <span class="tech-tag">C/C++</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Embedded Systems</span>
+                    <span class="tech-tag">IoT</span>
+                    <span class="tech-tag">Raspberry Pi</span>
+                    <span class="tech-tag">Arduino</span>
+                    <span class="tech-tag">MAVLink</span>
+                    <span class="tech-tag">KiCad</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">PCB Design</span>
+                    <span class="tech-tag">UART, SPI, I2C</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full p-6 text-center text-slate-500 border-t border-t-cyan-900/50">
+        <p>&copy; 2025 Harshvardhan Singh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
+
