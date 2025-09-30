@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | HVS Electronic & ECE | Harshvardhan Singh</title>
+    <meta name="description" content="Professional experience of Harshvardhan Singh (HVS Electronic), showcasing internships and technical roles related to Electronics and Communication Engineering (ECE).">
+    <meta name="keywords" content="Harshvardhan Singh Experience, HVS Tech, HVS ECE, HVS Electronic, Internships, KONIGTRONICS, OnePlus, Oppo, Alpha Tester">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a1a; color: #cbd5e1; }
+        .font-orbitron { font-family: 'Orbitron', sans-serif; }
+        .cyber-glow { box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); border: 1px solid rgba(0, 255, 255, 0.3); }
+        h1, h2 { text-shadow: 0 0 8px rgba(0,255,255,0.4); }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-orbitron font-bold tracking-tight text-white" style="text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);">HVS</a>
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="about.html" class="text-slate-300 hover:text-cyan-400">About</a>
+                    <a href="experience.html" class="text-cyan-400 font-bold">Experience</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-cyan-400">Projects</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-cyan-400">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-300 hover:text-white focus:outline-none"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg></button>
+                </div>
+            </div>
+        </div>
+         <div id="mobile-menu" class="hidden md:hidden bg-black/80">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">About</a>
+                <a href="experience.html" class="block px-3 py-2 rounded-md text-base font-medium text-cyan-400 bg-slate-800">Experience</a>
+                <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-orbitron font-bold text-white mb-8">Experience & Roles</h1>
+
+            <div class="space-y-12">
+                <!-- Internship Experience -->
+                <div class="p-8 rounded-lg cyber-glow bg-slate-900">
+                    <h2 class="text-2xl font-orbitron font-bold text-white mb-4">Internships</h2>
+                    <div class="border-l-2 border-cyan-500 pl-6 space-y-8">
+                        <div>
+                            <p class="text-slate-500 text-sm">Aug 2024 - Oct 2024</p>
+                            <h3 class="text-xl font-bold text-cyan-300 mt-1">Engineering Intern</h3>
+                            <p class="text-slate-400 font-medium">KONIGTRONICS (OPC) Pvt. Ltd.</p>
+                            <ul class="list-disc list-inside mt-2 text-slate-400 space-y-1">
+                                <li>Contributed to the development and testing of smart switching devices and load sensing technology.</li>
+                                <li>Designed and validated an autonomous room lighting system using IR sensors and wireless modules.</li>
+                                <li>Built Flask-based control dashboards and integrated embedded firmware with Raspberry Pi.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 text-sm">Mar 2024 - May 2024</p>
+                            <h3 class="text-xl font-bold text-cyan-300 mt-1">Project Intern</h3>
+                            <p class="text-slate-400 font-medium">KONIGTRONICS (OPC) Pvt. Ltd.</p>
+                            <ul class="list-disc list-inside mt-2 text-slate-400 space-y-1">
+                                <li>Participated in concept development, team brainstorming, and resolved live project challenges.</li>
+                                <li>Authored comprehensive project documentation, presentations, and technical reports.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership & Technical Experience -->
+                <div class="p-8 rounded-lg cyber-glow bg-slate-900">
+                    <h2 class="text-2xl font-orbitron font-bold text-white mb-4">Leadership & Technical Experience</h2>
+                     <div class="border-l-2 border-green-500 pl-6 space-y-8">
+                        <div>
+                            <p class="text-slate-500 text-sm">Mar 2020 - May 2023</p>
+                            <h3 class="text-xl font-bold text-green-300 mt-1">Alpha Tester</h3>
+                            <p class="text-slate-400 font-medium">OnePlus & Oppo</p>
+                            <p class="mt-2 text-slate-400">Served as an alpha tester for OxygenOS 10, 11, and 12, and beta hardware. Provided critical feedback on performance, bugs, and user experience for product lines including the OnePlus Nord series and Oppo Flagships.</p>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 text-sm">Feb 2023 - Jan 2025</p>
+                            <h3 class="text-xl font-bold text-green-300 mt-1">Head of Non-Technical Operations</h3>
+                            <p class="text-slate-400 font-medium">STARDUST Club</p>
+                            <p class="mt-2 text-slate-400">Led and managed large-scale events and successful fundraisers, coordinating across multiple teams to ensure smooth execution and community engagement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full p-6 text-center text-slate-500 border-t border-t-cyan-900/50">
+        <p>&copy; 2025 Harshvardhan Singh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
+
