@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | HVS Tech | ECE & Electronics Projects</title>
+    <meta name="description" content="Explore the engineering projects of Harshvardhan Singh (HVS Tech). Featuring work in UAS automation, embedded systems, and IoT from an ECE perspective.">
+    <meta name="keywords" content="Harshvardhan Singh Projects, HVS Tech, HVS ECE, HVS Electronic, UAS Automation, Drone Project, Embedded Systems, IoT, ECE Projects">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a1a; color: #cbd5e1; }
+        .font-orbitron { font-family: 'Orbitron', sans-serif; }
+        .cyber-glow-card { 
+            background-color: #0f172a;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cyber-glow-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+        }
+        h1 { text-shadow: 0 0 8px rgba(0,255,255,0.4); }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-orbitron font-bold tracking-tight text-white" style="text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);">HVS</a>
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="about.html" class="text-slate-300 hover:text-cyan-400">About</a>
+                    <a href="experience.html" class="text-slate-300 hover:text-cyan-400">Experience</a>
+                    <a href="projects.html" class="text-cyan-400 font-bold">Projects</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-cyan-400">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-300 hover:text-white focus:outline-none"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg></button>
+                </div>
+            </div>
+        </div>
+         <div id="mobile-menu" class="hidden md:hidden bg-black/80">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">About</a>
+                <a href="experience.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Experience</a>
+                <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-cyan-400 bg-slate-800">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-orbitron font-bold text-white mb-8">Featured Projects</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <a href="project_uas.html" class="block p-6 rounded-lg cyber-glow-card">
+                    <h2 class="text-2xl font-orbitron font-bold text-white mb-2">UAS Ground Operations Automation</h2>
+                    <p class="text-slate-400 mb-4">Engineered a system to automate on-ground drone operations, reducing manual dependencies and cutting mission initiation time by 50%.</p>
+                    <span class="text-cyan-400 font-semibold hover:text-cyan-200">View Case Study &rarr;</span>
+                </a>
+                
+                <!-- Add more project cards here as needed -->
+                <div class="p-6 rounded-lg cyber-glow-card bg-slate-800/50 flex flex-col items-center justify-center">
+                     <h2 class="text-2xl font-orbitron font-bold text-slate-500 mb-2">More Projects Coming Soon</h2>
+                     <p class="text-slate-600">Check back for updates.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full p-6 text-center text-slate-500 border-t border-t-cyan-900/50">
+        <p>&copy; 2025 Harshvardhan Singh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
+
