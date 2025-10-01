@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Harshvardhan Singh | HVS Tech Portfolio</title>
     <meta name="description" content="About Harshvardhan Singh (HVS Tech), an Electronics and Communication Engineering student specializing in Embedded Systems, IoT, and Robotics. HVS ECE, HVS Electronic.">
-    <meta name="keywords" content="Harshvardhan Singh, HVS Tech, HVS ECE, HVS Electronic, About Me, Electronics Engineer, Embedded Systems, IoT, Robotics, Ramaiah Institute of Technology">
+    <meta name="keywords" content="Harshvardhan Singh, HVS Tech, HVS ECE, HVS Electronic, About Me, Electronics Engineer, Embedded Systems, IoT, Robotics">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,9 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0a0a1a; color: #cbd5e1; }
         .font-orbitron { font-family: 'Orbitron', sans-serif; }
-        .cyber-glow { box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); border: 1px solid rgba(0, 255, 255, 0.3); }
+        .cyber-glow-box { box-shadow: 0 0 25px rgba(0, 255, 255, 0.3), inset 0 0 15px rgba(0, 255, 255, 0.2); border: 1px solid rgba(0, 255, 255, 0.3); }
         h1, h2 { text-shadow: 0 0 8px rgba(0,255,255,0.4); }
-        .tech-tag { @apply inline-block bg-cyan-900/50 text-cyan-300 text-sm font-medium px-4 py-2 rounded-md border border-cyan-700; }
+        .tag { @apply inline-block bg-slate-800 text-cyan-300 text-sm font-medium px-3 py-1 rounded-full; }
     </style>
 </head>
 <body class="antialiased">
@@ -50,32 +50,39 @@
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
         <h1 class="font-orbitron text-4xl md:text-5xl font-bold text-white mb-12 text-center">About Me</h1>
 
-        <div class="max-w-4xl mx-auto bg-slate-900 p-8 rounded-lg cyber-glow">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                <div class="md:col-span-1 flex justify-center">
-                    <img src="assets/profile-picture.png" alt="Harshvardhan Singh" class="rounded-full h-48 w-48 object-cover border-4 border-cyan-500 shadow-lg shadow-cyan-500/20">
+        <div class="max-w-4xl mx-auto bg-slate-900/50 p-8 md:p-12 rounded-lg cyber-glow-box">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+                
+                <!-- Profile Image -->
+                <div class="flex-shrink-0">
+                    <div class="w-48 h-48 rounded-full bg-slate-800 p-2 shadow-lg relative overflow-hidden ring-2 ring-cyan-500/50">
+                        <img src="assets/profile-picture.jpg" alt="Harshvardhan Singh" class="w-full h-full object-cover rounded-full">
+                    </div>
                 </div>
-                <div class="md:col-span-2">
+
+                <!-- Bio Text -->
+                <div class="text-center md:text-left">
                     <h2 class="font-orbitron text-3xl font-bold text-white">Harshvardhan Singh</h2>
-                    <p class="mt-4 text-slate-400 leading-relaxed">
+                    <p class="mt-4 text-slate-300 leading-relaxed">
                         I am an Electronics and Communication Engineering student at the Ramaiah Institute of Technology with a deep-seated passion for the architecture of technology. My focus lies in Embedded Systems, IoT, and Robotics, where I enjoy bridging the gap between hardware and software to create intelligent, autonomous solutions.
                     </p>
-                    <p class="mt-4 text-slate-400 leading-relaxed">
+                    <p class="mt-4 text-slate-300 leading-relaxed">
                         Through hands-on projects and internships, I've developed a strong skill set in designing custom hardware, developing firmware, and building systems that solve real-world problems. I am driven by the challenge of optimizing systems for efficiency and creating user-friendly interfaces for complex technologies.
                     </p>
                 </div>
             </div>
-            
+
+            <!-- Core Competencies -->
             <div class="mt-12">
                 <h3 class="font-orbitron text-2xl font-bold text-white text-center mb-6">Core Competencies</h3>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <span class="tech-tag">Embedded System Design</span>
-                    <span class="tech-tag">IoT & Wireless Communication</span>
-                    <span class="tech-tag">Robotics & Automation</span>
-                    <span class="tech-tag">Python & C/C++</span>
-                    <span class="tech-tag">Raspberry Pi & Arduino</span>
-                    <span class="tech-tag">PCB Design (KiCad)</span>
-                    <span class="tech-tag">MAVLink Protocol</span>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="tag">Embedded System Design</span>
+                    <span class="tag">IoT & Wireless Communication</span>
+                    <span class="tag">Robotics & Automation</span>
+                    <span class="tag">Python & C/C++</span>
+                    <span class="tag">Raspberry Pi & Arduino</span>
+                    <span class="tag">PCB Design (KiCad)</span>
+                    <span class="tag">MAVLink Protocol</span>
                 </div>
             </div>
         </div>
