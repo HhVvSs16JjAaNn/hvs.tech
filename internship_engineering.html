@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Intern Case Study | HVS Electronic</title>
+    <meta name="description" content="Detailed case study of the Engineering Internship at KONIGTRONICS (OPC) Pvt. Ltd. by Harshvardhan Singh (HVS Electronic), focusing on IoT and Embedded Systems.">
+    <meta name="keywords" content="Engineering Intern, KONIGTRONICS, HVS Tech, HVS ECE, HVS Electronic, IoT, Embedded Systems, Smart Switching, Load Sensing, Flask, Raspberry Pi">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a1a; color: #cbd5e1; }
+        .font-orbitron { font-family: 'Orbitron', sans-serif; }
+        .cyber-glow { box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); border: 1px solid rgba(0, 255, 255, 0.3); }
+        .tech-tag { @apply inline-block bg-cyan-900/50 text-cyan-300 text-sm font-medium px-4 py-2 rounded-md border border-cyan-700; }
+        h1, h2 { text-shadow: 0 0 8px rgba(0,255,255,0.4); }
+        p, ul { @apply text-slate-400 leading-relaxed; }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-2xl font-orbitron font-bold tracking-tight text-white" style="text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);">HVS</a>
+                <nav class="hidden md:flex space-x-6 items-center">
+                    <a href="about.html" class="text-slate-300 hover:text-cyan-400">About</a>
+                    <a href="experience.html" class="text-cyan-400 font-bold">Experience</a>
+                    <a href="projects.html" class="text-slate-300 hover:text-cyan-400">Projects</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-cyan-400">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-300 hover:text-white focus:outline-none"><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg></button>
+                </div>
+            </div>
+        </div>
+         <div id="mobile-menu" class="hidden md:hidden bg-black/80">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                 <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">About</a>
+                <a href="experience.html" class="block px-3 py-2 rounded-md text-base font-medium text-cyan-400 bg-slate-800">Experience</a>
+                <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+        
+        <a href="experience.html" class="text-cyan-400 hover:text-cyan-200">&larr; Back to Experience</a>
+        
+        <article class="max-w-4xl mx-auto mt-8">
+            <header class="mb-10">
+                <h1 class="font-orbitron text-4xl md:text-5xl font-bold text-white">Engineering Intern</h1>
+                <p class="text-xl text-slate-400 mt-2">KONIGTRONICS (OPC) Pvt. Ltd. | Aug 2024 - Oct 2024</p>
+            </header>
+            
+            <div class="bg-slate-900 p-8 rounded-lg cyber-glow space-y-12">
+                <section>
+                    <h2>Internship Overview</h2>
+                    <p>This internship provided hands-on experience in the development and testing of cutting-edge IoT and smart home technologies. I was deeply involved in the product development lifecycle, from hardware design and firmware integration to building user-facing control systems. The primary focus was on creating practical, efficient solutions for smart switching and load sensing applications.</p>
+                </section>
+
+                <section>
+                    <h2>Key Responsibilities & Contributions</h2>
+                    <ul class="list-disc list-inside mt-4 space-y-4">
+                        <li>
+                            <strong>Smart Switching & Load Sensing:</strong> Contributed to the core development of smart switching devices. This involved working with microcontrollers and sensors to accurately detect and manage electrical loads, a foundational component for energy management and automation systems.
+                        </li>
+                        <li>
+                            <strong>Autonomous Lighting System:</strong> Led the design and validation of an autonomous room lighting system. This proof-of-concept project utilized IR sensors to detect human presence and wireless modules for communication, creating a responsive and energy-efficient lighting solution. I was responsible for both the hardware setup and the logic controlling its behavior.
+                        </li>
+                        <li>
+                            <strong>Firmware & Software Integration:</strong> Played a key role in integrating embedded firmware with a Raspberry Pi. I developed and deployed control logic that allowed the Raspberry Pi to act as a central hub, processing sensor data and managing the smart devices.
+                        </li>
+                        <li>
+                            <strong>Web-Based Control Dashboards:</strong> Built user-friendly control dashboards using the Flask web framework. These dashboards provided a simple interface for monitoring sensor status, controlling devices remotely, and visualizing data, demonstrating the feasibility of a complete end-to-end IoT system.
+                        </li>
+                         <li>
+                            <strong>Technical Documentation:</strong> Created comprehensive, client-facing documentation outlining the system architecture, setup procedures, and final project deliverables. This ensured clarity and facilitated knowledge transfer to stakeholders.
+                        </li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Technologies Used</h2>
+                    <div class="mt-4 flex flex-wrap gap-4">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Raspberry Pi</span>
+                        <span class="tech-tag">Embedded C</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">IR Sensors</span>
+                        <span class="tech-tag">Load Sensing Tech</span>
+                        <span class="tech-tag">Wireless Modules</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Learning Outcomes</h2>
+                    <p>This role significantly strengthened my skills in rapid prototyping, full-stack IoT development, and hardware-software co-design. I gained practical experience in translating conceptual requirements into functional hardware and software, managing project timelines, and producing professional-grade documentation for technical and non-technical audiences.</p>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="w-full p-6 text-center text-slate-500 border-t border-t-cyan-900/50 mt-16">
+        <p>&copy; 2025 Harshvardhan Singh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>
