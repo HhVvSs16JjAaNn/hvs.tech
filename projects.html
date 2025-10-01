@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | HVS Tech | ECE & Electronics Projects</title>
-    <meta name="description" content="Explore the engineering projects of Harshvardhan Singh (HVS Tech). Featuring work in UAS automation, embedded systems, and IoT from an ECE perspective.">
-    <meta name="keywords" content="Harshvardhan Singh Projects, HVS Tech, HVS ECE, HVS Electronic, UAS Automation, Drone Project, Embedded Systems, IoT, ECE Projects">
+    <title>Projects & Awards | Harshvardhan Singh | HVS Tech Portfolio</title>
+    <meta name="description" content="Featured projects and awards of Harshvardhan Singh (HVS Tech), showcasing work in Embedded Systems, UAS, and IoT. HVS ECE, HVS Electronic.">
+    <meta name="keywords" content="Harshvardhan Singh, HVS Tech, HVS ECE, HVS Electronic, Projects, UAS, Drone, Embedded Systems, Awards, Google Code-In">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +13,21 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0a0a1a; color: #cbd5e1; }
         .font-orbitron { font-family: 'Orbitron', sans-serif; }
-        .cyber-glow-card { 
+        .cyber-glow { box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); border: 1px solid rgba(0, 255, 255, 0.3); }
+        h1, h2 { text-shadow: 0 0 8px rgba(0,255,255,0.4); }
+        .project-card { 
             background-color: #0f172a;
-            border: 1px solid rgba(0, 255, 255, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
         }
-        .cyber-glow-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+        .project-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.5); 
         }
-        h1 { text-shadow: 0 0 8px rgba(0,255,255,0.4); }
+        .btn-primary { @apply inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-3 px-6 rounded-md transition duration-300; }
+        /* Refined styles for the awards section */
+        .award-item { 
+            @apply bg-slate-900/70 p-4 rounded-lg border border-slate-700/50 transition-colors hover:border-cyan-400/50;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -42,7 +47,8 @@
                 </div>
             </div>
         </div>
-         <div id="mobile-menu" class="hidden md:hidden bg-black/80">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black/80">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
                 <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">About</a>
                 <a href="experience.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">Experience</a>
@@ -52,36 +58,71 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+        <h1 class="font-orbitron text-4xl md:text-5xl font-bold text-white mb-16 text-center">Projects & Accomplishments</h1>
+
+        <!-- Projects Section -->
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-orbitron font-bold text-white mb-8">Featured Projects</h1>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project Card 1 -->
-                <a href="project_uas.html" class="block p-6 rounded-lg cyber-glow-card">
-                    <h2 class="text-2xl font-orbitron font-bold text-white mb-2">UAS Ground Operations Automation</h2>
-                    <p class="text-slate-400 mb-4">Engineered a system to automate on-ground drone operations, reducing manual dependencies and cutting mission initiation time by 50%.</p>
-                    <span class="text-cyan-400 font-semibold hover:text-cyan-200">View Case Study &rarr;</span>
-                </a>
-                
-                <!-- Add more project cards here as needed -->
-                <div class="p-6 rounded-lg cyber-glow-card bg-slate-800/50 flex flex-col items-center justify-center">
-                     <h2 class="text-2xl font-orbitron font-bold text-slate-500 mb-2">More Projects Coming Soon</h2>
-                     <p class="text-slate-600">Check back for updates.</p>
+            <h2 class="font-orbitron text-3xl font-bold text-white mb-8">Featured Project</h2>
+            <div class="project-card p-8 rounded-lg cyber-glow">
+                <h3 class="font-orbitron text-2xl font-bold text-white">User-Friendly Access & Optimization of Ground Operations for UAS</h3>
+                <p class="mt-4 text-slate-400 leading-relaxed">
+                    Engineered a system to automate on-ground drone operations, integrating a Raspberry Pi with a Pixhawk flight controller to reduce manual dependencies. Developed Python scripts using the MAVLink protocol to automate mission uploads, pre-flight checks, and arming sequences via a physical button interface. Successfully reduced mission initiation time by 50%.
+                </p>
+                <div class="mt-6">
+                    <a href="project_uas.html" class="btn-primary">View Case Study &rarr;</a>
                 </div>
+            </div>
+        </div>
 
+        <!-- Awards & Recognition Section -->
+        <div class="max-w-4xl mx-auto mt-20">
+            <h2 class="font-orbitron text-3xl font-bold text-white text-center mb-10">Awards & Recognition</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <div class="award-item">
+                    <div>
+                        <h3 class="font-semibold text-white text-base">Google Code-In Participant</h3>
+                        <p class="text-slate-400 text-sm">Completed development tasks for CCDevelopers and Drupal.</p>
+                    </div>
+                </div>
+                
+                <div class="award-item">
+                     <div>
+                        <h3 class="font-semibold text-white text-base">Winner: International Inter-DPS GK Quiz</h3>
+                        <p class="text-slate-400 text-sm">Achieved first place in a competitive general knowledge quiz.</p>
+                    </div>
+                </div>
+                
+                <div class="award-item">
+                     <div>
+                        <h3 class="font-semibold text-white text-base">Gold Medalist: International English Olympiad</h3>
+                        <p class="text-slate-400 text-sm">Secured the top position in an international competition.</p>
+                    </div>
+                </div>
+                
+                <div class="award-item">
+                    <div>
+                        <h3 class="font-semibold text-white text-base">Silver Medalist: National Cyber Olympiad</h3>
+                        <p class="text-slate-400 text-sm">Earned a silver medal in a national-level cybersecurity competition.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="w-full p-6 text-center text-slate-500 border-t border-t-cyan-900/50">
+    <footer class="w-full p-6 text-center text-slate-500 border-t border-t-cyan-900/50 mt-16">
         <p>&copy; 2025 Harshvardhan Singh. All rights reserved.</p>
     </footer>
 
     <script>
+        // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
     </script>
 </body>
 </html>
