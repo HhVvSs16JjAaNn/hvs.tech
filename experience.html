@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience | HVS Electronic & ECE | Harshvardhan Singh</title>
-    <meta name="description" content="Professional experience of Harshvardhan Singh (HVS Electronic), showcasing internships and technical roles related to Electronics and Communication Engineering (ECE).">
-    <meta name="keywords" content="Harshvardhan Singh Experience, HVS Tech, HVS ECE, HVS Electronic, Internships, KONIGTRONICS, OnePlus, Oppo, Alpha Tester">
+    <title>Experience | Harshvardhan Singh | HVS Tech Portfolio</title>
+    <meta name="description" content="Professional experience of Harshvardhan Singh (HVS Tech), detailing roles in engineering, project management, and alpha testing. HVS ECE, HVS Electronic.">
+    <meta name="keywords" content="Harshvardhan Singh, HVS Tech, HVS ECE, HVS Electronic, Experience, Engineering Intern, Project Intern, Alpha Tester, OnePlus, Oppo, STARDUST Club">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,30 @@
         body { font-family: 'Inter', sans-serif; background-color: #0a0a1a; color: #cbd5e1; }
         .font-orbitron { font-family: 'Orbitron', sans-serif; }
         .cyber-glow { box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); border: 1px solid rgba(0, 255, 255, 0.3); }
-        h1, h2 { text-shadow: 0 0 8px rgba(0,255,255,0.4); }
+        h1, h2, h3 { text-shadow: 0 0 8px rgba(0,255,255,0.4); }
+        .experience-card {
+            position: relative;
+            padding-left: 2.5rem;
+            border-left: 2px solid #22d3ee;
+            transition: all 0.3s ease;
+        }
+        .experience-card:before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #0a0a1a;
+            border: 2px solid #22d3ee;
+            transition: all 0.3s ease;
+        }
+        .experience-card:hover:before {
+            background-color: #22d3ee;
+            transform: scale(1.2);
+        }
+        .btn-primary { @apply inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-2 px-5 rounded-md transition duration-300; }
     </style>
 </head>
 <body class="antialiased">
@@ -34,7 +57,8 @@
                 </div>
             </div>
         </div>
-         <div id="mobile-menu" class="hidden md:hidden bg-black/80">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black/80">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
                 <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-slate-800">About</a>
                 <a href="experience.html" class="block px-3 py-2 rounded-md text-base font-medium text-cyan-400 bg-slate-800">Experience</a>
@@ -44,67 +68,63 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-orbitron font-bold text-white mb-8">Experience & Roles</h1>
+        <h1 class="font-orbitron text-4xl md:text-5xl font-bold text-white mb-12 text-center">Professional Experience</h1>
 
-            <div class="space-y-12">
-                <!-- Internship Experience -->
-                <div class="p-8 rounded-lg cyber-glow bg-slate-900">
-                    <h2 class="text-2xl font-orbitron font-bold text-white mb-4">Internships</h2>
-                    <div class="border-l-2 border-cyan-500 pl-6 space-y-8">
-                        <div>
-                            <p class="text-slate-500 text-sm">Aug 2024 - Oct 2024</p>
-                            <h3 class="text-xl font-bold text-cyan-300 mt-1">Engineering Intern</h3>
-                            <p class="text-slate-400 font-medium">KONIGTRONICS (OPC) Pvt. Ltd.</p>
-                            <ul class="list-disc list-inside mt-2 text-slate-400 space-y-1">
-                                <li>Contributed to the development and testing of smart switching devices and load sensing technology.</li>
-                                <li>Designed and validated an autonomous room lighting system using IR sensors and wireless modules.</li>
-                                <li>Built Flask-based control dashboards and integrated embedded firmware with Raspberry Pi.</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="text-slate-500 text-sm">Mar 2024 - May 2024</p>
-                            <h3 class="text-xl font-bold text-cyan-300 mt-1">Project Intern</h3>
-                            <p class="text-slate-400 font-medium">KONIGTRONICS (OPC) Pvt. Ltd.</p>
-                            <ul class="list-disc list-inside mt-2 text-slate-400 space-y-1">
-                                <li>Participated in concept development, team brainstorming, and resolved live project challenges.</li>
-                                <li>Authored comprehensive project documentation, presentations, and technical reports.</li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="max-w-3xl mx-auto space-y-12">
+            <!-- KONIGTRONICS - Engineering Intern -->
+            <div class="experience-card pb-12">
+                <p class="text-sm text-cyan-400">Aug 2024 - Oct 2024</p>
+                <h2 class="text-2xl font-bold text-white mt-1">Engineering Intern</h2>
+                <p class="text-slate-400 font-medium">KONIGTRONICS (OPC) Pvt. Ltd.</p>
+                <p class="mt-4 text-slate-400">Contributed to the development and testing of smart switching devices and load sensing technology. Designed and validated an autonomous room lighting system, built Flask-based control dashboards, and integrated embedded firmware with Raspberry Pi.</p>
+                <a href="internship_engineering.html" class="btn-primary mt-4">View Details &rarr;</a>
+            </div>
+
+            <!-- KONIGTRONICS - Project Intern -->
+            <div class="experience-card pb-12">
+                <p class="text-sm text-cyan-400">Mar 2024 - May 2024</p>
+                <h2 class="text-2xl font-bold text-white mt-1">Project Intern</h2>
+                <p class="text-slate-400 font-medium">KONIGTRONICS (OPC) Pvt. Ltd.</p>
+                <p class="mt-4 text-slate-400">Participated in concept development, team brainstorming, and resolved live project challenges. Authored comprehensive project documentation, presentations, and technical reports to support the engineering team.</p>
+                <a href="internship_project.html" class="btn-primary mt-4">View Details &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Parallel Experience Section -->
+        <div class="max-w-3xl mx-auto mt-20">
+             <h2 class="font-orbitron text-3xl font-bold text-white text-center mb-10">Leadership & Parallel Experience</h2>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Alpha Tester Card -->
+                <div class="bg-slate-900 p-6 rounded-lg cyber-glow h-full flex flex-col">
+                    <p class="text-sm text-cyan-400">Mar 2020 - May 2023</p>
+                    <h3 class="text-2xl font-bold text-white mt-1">Alpha Tester</h3>
+                    <p class="text-slate-400 font-medium">OnePlus & Oppo</p>
+                    <p class="mt-4 text-slate-400 flex-grow">Served as an alpha tester for pre-release software and beta hardware, providing critical feedback on performance, bugs, and user experience. Products tested include OxygenOS (10, 11, and 12), the OnePlus Nord series, and Oppo flagship devices.</p>
                 </div>
 
-                <!-- Leadership & Technical Experience -->
-                <div class="p-8 rounded-lg cyber-glow bg-slate-900">
-                    <h2 class="text-2xl font-orbitron font-bold text-white mb-4">Leadership & Technical Experience</h2>
-                     <div class="border-l-2 border-green-500 pl-6 space-y-8">
-                        <div>
-                            <p class="text-slate-500 text-sm">Mar 2020 - May 2023</p>
-                            <h3 class="text-xl font-bold text-green-300 mt-1">Alpha Tester</h3>
-                            <p class="text-slate-400 font-medium">OnePlus & Oppo</p>
-                            <p class="mt-2 text-slate-400">Served as an alpha tester for OxygenOS 10, 11, and 12, and beta hardware. Provided critical feedback on performance, bugs, and user experience for product lines including the OnePlus Nord series and Oppo Flagships.</p>
-                        </div>
-                        <div>
-                            <p class="text-slate-500 text-sm">Feb 2023 - Jan 2025</p>
-                            <h3 class="text-xl font-bold text-green-300 mt-1">Head of Non-Technical Operations</h3>
-                            <p class="text-slate-400 font-medium">STARDUST Club</p>
-                            <p class="mt-2 text-slate-400">Led and managed large-scale events and successful fundraisers, coordinating across multiple teams to ensure smooth execution and community engagement.</p>
-                        </div>
-                    </div>
+                <!-- STARDUST Club Card -->
+                <div class="bg-slate-900 p-6 rounded-lg cyber-glow h-full flex flex-col">
+                    <p class="text-sm text-cyan-400">Feb 2023 - Jan 2025</p>
+                    <h3 class="text-2xl font-bold text-white mt-1">Head of Non-Technical Operations</h3>
+                    <p class="text-slate-400 font-medium">STARDUST Club</p>
+                    <p class="mt-4 text-slate-400 flex-grow">Led and managed the planning and execution of large-scale club events and successful fundraisers. Coordinated across multiple teams to ensure smooth operations and achievement of organizational goals.</p>
                 </div>
             </div>
         </div>
     </main>
-
-    <footer class="w-full p-6 text-center text-slate-500 border-t border-t-cyan-900/50">
+    
+    <footer class="w-full p-6 text-center text-slate-500 border-t border-t-cyan-900/50 mt-16">
         <p>&copy; 2025 Harshvardhan Singh. All rights reserved.</p>
     </footer>
 
     <script>
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
     </script>
 </body>
 </html>
